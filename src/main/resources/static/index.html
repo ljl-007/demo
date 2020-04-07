@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h1{
+            color: blue;
+            text-align: center;
+            /*margin: 0 auto;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="big-one">
+        <h1>欢迎来到基础底层搭建接口</h1>
+    </div>
+
+</body>
+<script>
+    // 递归算法：就是函数可以通过调用自身来进行递归
+    // 递归算法 数的加法
+    function fu(n) {
+        if (n === 1) {
+            return 1;
+        }
+        return n + fu(n - 1);
+    }
+    // 递归算法 数的阶乘
+    function fu1(n) {
+        if (n === 1) {
+            return n;
+        }
+        return n * fu1(n - 1);
+    }
+    console.log(fu1(4))
+
+</script>
+</html>
