@@ -15,7 +15,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="basicApi" options="-parameters" />
+      <module name="basicApi" options="" />
     </option>
   </component>
 </project>

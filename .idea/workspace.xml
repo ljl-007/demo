@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7600800d-1047-476f-b494-8c91f19e6c0c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/basicstemplate/BasicstemplateApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +13,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -35,7 +34,6 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -44,13 +42,6 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="Lombok plugin" />
   </component>
   <component name="RunManager">
     <configuration name="BasicstemplateApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -84,117 +75,57 @@
       <option name="presentableId" value="Default" />
       <updated>1585636688276</updated>
       <workItem from="1585636697962" duration="1231000" />
-      <workItem from="1585638431403" duration="10119000" />
-      <workItem from="1586239258643" duration="2981000" />
     </task>
-    <task id="LOCAL-00001" summary="第一次提交基础接口项目">
-      <created>1585639710866</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1585639710866</updated>
-    </task>
-    <task id="LOCAL-00002" summary="新增index">
-      <created>1586239403990</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1586239403990</updated>
-    </task>
-    <task id="LOCAL-00003" summary="新增index">
-      <created>1586241561723</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1586241561723</updated>
-    </task>
-    <task id="LOCAL-00004" summary="新增index">
-      <created>1586241902864</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1586241902864</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="第一次提交基础接口项目" />
-    <MESSAGE value="新增index" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增index" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="682" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585648171106">
+    <state x="1021" y="305" key="FileChooserDialogImpl" timestamp="1585639380539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="682" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585648171106" />
-    <state x="738" y="144" key="CommitChangelistDialog2" timestamp="1586241901866">
+    <state x="1021" y="305" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585639380539" />
+    <state width="785" height="282" key="GridCell.Tab.0.bottom" timestamp="1585638416423">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="738" y="144" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586241901866" />
-    <state x="184" y="85" key="DiffContextDialog" timestamp="1586242155531">
+    <state width="785" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585638416423" />
+    <state width="785" height="282" key="GridCell.Tab.0.center" timestamp="1585638416423">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="85" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586242155531" />
-    <state x="1021" y="305" key="FileChooserDialogImpl" timestamp="1585653244535">
+    <state width="785" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585638416423" />
+    <state width="785" height="282" key="GridCell.Tab.0.left" timestamp="1585638416423">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1021" y="305" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585653244535" />
-    <state width="1474" height="282" key="GridCell.Tab.0.bottom" timestamp="1585656526563">
+    <state width="785" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585638416423" />
+    <state width="785" height="282" key="GridCell.Tab.0.right" timestamp="1585638416423">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1474" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585656526563" />
-    <state width="1474" height="282" key="GridCell.Tab.0.center" timestamp="1585656526563">
+    <state width="785" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585638416423" />
+    <state width="785" height="282" key="GridCell.Tab.1.bottom" timestamp="1585638416423">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1474" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585656526563" />
-    <state width="1474" height="282" key="GridCell.Tab.0.left" timestamp="1585656526563">
+    <state width="785" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585638416423" />
+    <state width="785" height="282" key="GridCell.Tab.1.center" timestamp="1585638416423">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1474" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585656526563" />
-    <state width="1474" height="282" key="GridCell.Tab.0.right" timestamp="1585656526563">
+    <state width="785" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585638416423" />
+    <state width="785" height="282" key="GridCell.Tab.1.left" timestamp="1585638416423">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1474" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585656526563" />
-    <state width="1474" height="282" key="GridCell.Tab.1.bottom" timestamp="1585656526564">
+    <state width="785" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585638416423" />
+    <state width="785" height="282" key="GridCell.Tab.1.right" timestamp="1585638416423">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1474" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585656526564" />
-    <state width="1474" height="282" key="GridCell.Tab.1.center" timestamp="1585656526563">
+    <state width="785" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585638416423" />
+    <state x="824" y="192" width="916" height="717" key="SettingsEditor" timestamp="1585639242233">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1474" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585656526563" />
-    <state width="1474" height="282" key="GridCell.Tab.1.left" timestamp="1585656526563">
+    <state x="824" y="192" width="916" height="717" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585639242233" />
+    <state x="210" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1585638434327">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1474" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585656526563" />
-    <state width="1474" height="282" key="GridCell.Tab.1.right" timestamp="1585656526564">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1474" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585656526564" />
-    <state x="778" y="208" width="916" height="717" key="SettingsEditor" timestamp="1586241665563">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="778" y="208" width="916" height="717" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586241665563" />
-    <state x="833" y="283" key="Vcs.Push.Dialog.v2" timestamp="1586241569313">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="833" y="283" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586241569313" />
-    <state x="210" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1586239258637">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="210" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586239258637" />
-    <state x="692" y="310" key="git4idea.merge.GitPullDialog" timestamp="1586242108581">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="692" y="310" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586242108581" />
-    <state x="334" y="221" key="new project wizard" timestamp="1585653227402">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="334" y="221" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1585653227401" />
+    <state x="210" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585638434327" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/basicstemplate$BasicstemplateApplication.ic" NAME="BasicstemplateApplication Coverage Results" MODIFIED="1585637160337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
