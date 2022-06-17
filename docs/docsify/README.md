@@ -1,5 +1,44 @@
-# docsify部署文档
+# 常用的开发网址
 
-## 第一章节
-## 第一章节
-
+- 前端面试题：https://www.cnblogs.com/autismtune/p/5210116.html
+- 前端面是总结：https://blog.csdn.net/MingL520/article/details/88549999
+- ES6：https://es6.ruanyifeng.com/#docs/destructuring
+- flex常用布局：https://www.cnblogs.com/xianxianxxx/p/8086554.html
+- 常用遍历数组的方式：https://www.cnblogs.com/sun-web/p/10598949.html
+- vue  全家桶：http://doc.liangxinghua.com/vue-family/1.9.html
+- google插件下载：https://chromecj.com/web-development/2018-01/886/download.html
+- Lodash js实用工具库：https://www.lodashjs.com/docs/lodash.uniq
+- web 开发技术：https://developer.mozilla.org/zh-CN/docs/Web
+- 廖雪峰：https://www.liaoxuefeng.com/
+- git常用命令大全：https://blog.csdn.net/qq_38111015/article/details/84885809
+- java面试全家桶 https://www.cnblogs.com/think90/p/11455297.html
+- swiper学习：https://www.swiper.com.cn/api/index.html
+- ui-app：https://uviewui.com/components/intro.html
+- 前端工程师手册 https://leohxj.gitbooks.io/front-end-database/content/html-and-css-basic/css-write-and-name.html
+- 前端学习网站（前站）http://www.frontendjs.com/
+- 大前端 http://www.daqianduan.com/6704.html
+- js文档（包含方法参数说明） http://www.shouce.ren/api/view/a/13232
+- JSRUN （作者：程序员鱼皮）http://jsrun.net/square/web?a=1
+- MD在线阅览：https://markdownlivepreview.com/ || https://www.zybuluo.com/mdeditor
+- css 裁剪工具：https://www.html.cn/tool/css-clip-path
+- 数据库表设计（果创云）：http://open.yesapi.cn/list.html
+- MyBatis Mapper XML 文件 的学习详解：https://www.cnblogs.com/zhizhao/p/7808880.html
+- 自定义视频组件：https://blog.csdn.net/weixin_44735916/article/details/109311053
+- vueX Model的之间的通信 https://blog.csdn.net/qq_36437172/article/details/108564329
+- python 永久激活网址http://vrg123.com/ 网站秘钥：6575
+- https://www.oyohyee.com/archives 学习网站
+- codeSheep分享的网址：https://github.com/rd2coding/Road2Coding
+- js addEventListener()所有事件api: https://www.cnblogs.com/zhaodz/p/12031500.html
+- 小米java开发博客地址：http://blog.healerjean.com/
+- w3 https://www.w3cschool.cn/  
+- 简易教程网址：https://www.twle.cn/
+- 国内taobao镜像地址https://npm.taobao.org/mirrors
+- 常用函数封装 https://mp.weixin.qq.com/s/2MgnH7CaLa94yj6RAtz3Pg
+- csdn在线查询 http://www.staticfile.org/
+- canvas涂鸦 https://zhoushuo.me/drawingborad/ 第二个实例 https://my.weblf.cn/php0518/html_page/write_board2.html
+- css nth-child https://www.cnblogs.com/guozh/p/10161623.html
+- TS中文网（值得推荐的） http://ts.xcatliu.com/basics/declaration-files.html
+- 看云文档（直接搜）
+- 改图宝 https://www.gaitubao.com/
+- linux命令查询:https://www.linuxcool.com/
+- xshell下载：https://xshell.en.softonic.com/download
