@@ -1,0 +1,221 @@
+<html>
+<style type="text/css">
+	html,body{
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.conetnt{
+		width: 100%;
+		height: 100%;
+		background: #ddd;
+	}
+	.box {
+		width: 100px;
+		height: 100px;
+		margin: 15px;
+		border: 1px solid #000;
+		flex-shrink: 0;
+		display: inline-block;
+		text-align: center;
+		line-height: 100px;
+	}
+	.box:hover{
+		cursor: pointer;
+	}
+</style>
+<script type="text/javascript">
+	
+
+	
+	function isMobileTerminal(){
+		const UA = navigator.userAgent
+	    let type = '';
+	    if (
+	      UA.match(
+	        /(Android|webOS|iPhone|iPad|iPod|BlackBerry|Windows Phone)/i
+	      )
+	    ) {
+	      if (/iPhone|iPad|iPod/.test(UA)) {
+	        type = 'ios';
+	      } else if (/Android/.test(UA)) {
+	        type = 'android';
+	      }
+	    } else {
+	      type = 'pc';
+	    }
+	    return type;
+    }
+    function onFontsize() {
+      const html = document.documentElement;
+      const cliWidth = html.clientWidth;
+      const conetnt = document.querySelector('.conetnt');
+      // preview.setAttribute(
+      //   'style',
+      //   'padding:10px 25px;width:100%;height:100%;overflow:auto;margin:0;'
+      // );
+      // conetnt.setAttribute(
+      //   'style',
+      //   `padding:10px 25px;height:${100 / (cliWidth / 794)}%;overflow:auto;margin:0;transform:scale(${
+      //     cliWidth / 794
+      //   });transform-origin: 0 top 0;`
+      // );
+      html.style.fontSize = 100 * (cliWidth / 750) + 'px';
+      html.style.fontSize =  '50px';
+    }
+	window.onload = function() {
+	(function(){
+		const conetnt = document.querySelector('.conetnt');
+		console.log(conetnt)
+		for(let i=0; i<20;i++){
+			const div = document.createElement('div');
+			div.classList = `box box-${i}`;
+			div.innerHTML = i
+			conetnt.appendChild(div);
+		}
+	})()
+    var box = document.querySelectorAll(".box");
+    const parent = document.querySelector('.conetnt')
+     let mouseStartX = 0 
+     let mouseStartY = 0 
+     let moveDom = null
+    if(isMobileTerminal() == "pc"){
+		  Array.from(box).forEach(node =>{
+	        console.log(node) 
+	        node.onmouseenter = function(event) {
+	            const currentDom = event.target 
+	            currentDom.style = 'background:blue'
+	            currentDom.setAttribute('draggable', true)
+	            // currentDom.onclick = function(event){
+	            // 	console.log(event)
+	            // }
+	        }
+	        node.onmouseleave = function(event) {
+	            const currentDom = event.target 
+	            currentDom.removeAttribute('draggable') 
+	            currentDom.style = ''
+	        }
+	        node.ondrag = function(event) {
+	            // alert(1)
+	            // console.log('在拖',event)
+	            const {
+	                offsetX,
+	                offsetY
+	            } = event 
+	            mouseStartX = offsetX 
+	            mouseStartY = offsetY 
+	            moveDom = event.target
+	        }
+	        node.ondragend = function(event) {
+	            // const currentDom = event.target
+	            // currentDom.removeAttribute('draggable')
+	        }
+	        parent.ondrop = function(event) {
+	            // console.log('开始放置',event);
+	            placeTarget(event, parent, true)
+	        }
+	        parent.ondragenter = function(event) {
+	            // console.log('进入位置元素',event);
+	        }
+	        node.ondragover = function(event) {
+	            // 将位置元素设置成可放置的元素
+	            event.preventDefault();
+	            placeTarget(event, parent, false)
+	        }
+
+	    })
+	}else{
+		onFontsize()
+		Array.from(box).forEach(node =>{
+			node.ontouchstart = function(event) {
+	            const touch = event.targetTouches[0]
+	            touch.target.style = 'background:blue'
+	            touch.target.setAttribute('draggable', true)
+	        }
+	        node.ontouchend = function(event) {
+	            const touch = event.changedTouches[0]
+	            touch.target.removeAttribute('draggable') 
+	            touch.target.style = ''
+	            placeTarget(touch, parent, true)
+	        }
+	        node.ontouchmove = function(event) {
+	        	let touch = event.targetTouches[0]
+	        	console.log(touch)
+	        	 moveDom = touch.target
+	        	 placeTarget(touch, parent, false)
+	
+	        }
+	        
+		})
+	}
+    function placeTarget(event, parent, isplace) {
+        const {
+            pageX: dargX,
+            pageY: dargY
+        } = event 
+        console.log(event)
+        const children = parent.children 
+        const domNodeList = Array.from(parent.children) 
+        for (let i = 0; i < domNodeList.length; i++) {
+            const children = domNodeList[i] 
+            const {
+                offsetLeft,
+                offsetTop,
+                offsetWidth,
+                offsetHeight
+            } = children 
+            const startX = offsetLeft 
+            const endX = offsetLeft + offsetWidth 
+            const startY = offsetTop 
+            const endY = offsetTop + offsetHeight 
+            const midX = (startX + endX) / 2 
+            const midY = (startY + endY) / 2 
+            children.style = ''
+            if (dargX > startX && dargY > startY && dargX < endX && dargY < endY) {
+                if (dargX > midX && dargY > startY) {
+                    if (isplace) {
+                        if (i == domNodeList.length - 1) {
+                            parent.appendChild(moveDom)
+                        } else {
+                            parent.insertBefore(moveDom, domNodeList[i + 1])
+                        }
+                    } else {
+                        children.style = 'border-right:3px solid red'
+                    }
+                    // console.log(moveDom,parent,domNodeList[i])
+                    // return
+                } else {
+                    if (isplace) {
+                        parent.insertBefore(moveDom, domNodeList[i])
+                    } else {
+                        children.style = 'border-left:3px solid green'
+                    }
+                    // console.log('被拖动的',moveDom,domNodeList[i])
+                    // return
+                }
+            }
+        }
+    }
+    
+    // box.onmousedown = function(event){
+    //     document.onmousemove = function(event){
+    //         event = event || window.event;
+    //         var left = event.clientX;
+    //         var top = event.clientY;
+    //         box.style.left = left +"px";
+    //         box.style.top = top +"px";
+    //         document.onmouseup = function(){
+    //             document.onmousemove = null;
+    //             document.onmouseup = null;
+    //             alert("鼠标松开了");
+    //         };
+    //     };
+    // };
+};
+</script>
+<body>
+	<div class="conetnt">
+	</div>
+</body>
+</html>
