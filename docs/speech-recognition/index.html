@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>语音识别</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://lib.baomitu.com/js-sha256/0.9.0/sha256.min.js"></script>
+    <script src="https://student-primary.zhihuiliu.com/js/vconsole.min.js"></script>
+    <!-- <script src="./main.js" type="module"></script> -->
+    <style>
+      h1,
+      .btn-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .btn {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: aquamarine;
+        text-align: center;
+        line-height: 100px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1>语音识别</h1>
+      <div class="btn-box">
+        <div class="btn" @click="start">{{startStr}}</div>
+        <div class="btn" @click="stop">{{stopStr}}</div>
+      </div>
+      <div class="text">{{resulText}}</div>
+    </div>
+    <script type="module">
+      new window.VConsole()
+      import {
+        startRecording,
+        endRecording,
+        getResult,
+        realTimeWrite
+      } from './main.js'
+      const { createApp } = Vue
+      createApp({
+        data() {
+          return {
+            startStr: '开始录音',
+            stopStr: '结束录音',
+            resulText: ''
+          }
+        },
+        methods: {
+          start() {
+            startRecording()
+            realTimeWrite(e => {
+              this.resulText = e.map(r => r.text).join('')
+            })
+            console.log('11111s')
+          },
+          stop() {
+            endRecording()
+            console.log('结果', getResult())
+
+            // realTimeWrite((res) =>{
+            //   res.map(r => r.text).join('')
+            // })
+            this.resulText = getResult()
+              .map(r => r.text)
+              .join('')
+          }
+        }
+      }).mount('#app')
+    </script>
+  </body>
+</html>
